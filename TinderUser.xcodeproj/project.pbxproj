@@ -1,0 +1,814 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1EDD85B088982C0CE957ABEC /* Pods_TinderUserTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1ECF6978B3C49E3A39955B2D /* Pods_TinderUserTests.framework */; };
+		23A2A3784F1E48A5AF910AB4 /* Pods_TinderUser.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 84BF92BB789C138E11247564 /* Pods_TinderUser.framework */; };
+		EE5D2EA924CB705D00239854 /* FavListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2EA824CB705D00239854 /* FavListViewController.swift */; };
+		EE5D2EAD24CB741C00239854 /* PersonCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2EAC24CB741C00239854 /* PersonCardView.swift */; };
+		EE5D2EAF24CB742F00239854 /* PersonCardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE5D2EAE24CB742F00239854 /* PersonCardView.xib */; };
+		EE5D2EB124CC0AF800239854 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2EB024CC0AF800239854 /* UIView+Extension.swift */; };
+		EE5D2EB324CC0BC100239854 /* StoryBorad+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2EB224CC0BC100239854 /* StoryBorad+Extension.swift */; };
+		EE5D2EB524CC0DD400239854 /* TabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2EB424CC0DD400239854 /* TabView.swift */; };
+		EE5D2EB724CC0DE200239854 /* TabView.xib in Resources */ = {isa = PBXBuildFile; fileRef = EE5D2EB624CC0DE200239854 /* TabView.xib */; };
+		EE5D2EB924CC146000239854 /* XIBHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2EB824CC146000239854 /* XIBHelper.swift */; };
+		EE5D2EBB24CC9AC900239854 /* PanGestureInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2EBA24CC9AC900239854 /* PanGestureInteractor.swift */; };
+		EE5D2EBD24CCA9B400239854 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE5D2EBC24CCA9B400239854 /* HomeViewModel.swift */; };
+		EE62060224CD783100DA79D7 /* HomeViewInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE62060124CD783100DA79D7 /* HomeViewInteractor.swift */; };
+		EE62060424CD809900DA79D7 /* FavouriteDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE62060324CD809900DA79D7 /* FavouriteDataSource.swift */; };
+		EE62060624CD81BF00DA79D7 /* FavTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE62060524CD81BF00DA79D7 /* FavTableCell.swift */; };
+		EE62060824CD8D8500DA79D7 /* HomeViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE62060724CD8D8500DA79D7 /* HomeViewModelTests.swift */; };
+		EE62060A24CD8D9800DA79D7 /* FavDataSourceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE62060924CD8D9800DA79D7 /* FavDataSourceTest.swift */; };
+		EE65EA4824CB5AB2005A391E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA4724CB5AB2005A391E /* AppDelegate.swift */; };
+		EE65EA4A24CB5AB2005A391E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA4924CB5AB2005A391E /* SceneDelegate.swift */; };
+		EE65EA4C24CB5AB2005A391E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA4B24CB5AB2005A391E /* ViewController.swift */; };
+		EE65EA4F24CB5AB2005A391E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE65EA4D24CB5AB2005A391E /* Main.storyboard */; };
+		EE65EA5124CB5AB9005A391E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EE65EA5024CB5AB9005A391E /* Assets.xcassets */; };
+		EE65EA5424CB5AB9005A391E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE65EA5224CB5AB9005A391E /* LaunchScreen.storyboard */; };
+		EE65EA5F24CB5AB9005A391E /* TinderUserTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA5E24CB5AB9005A391E /* TinderUserTests.swift */; };
+		EE65EA8224CB5DBA005A391E /* DataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA7124CB5DBA005A391E /* DataManager.swift */; };
+		EE65EA8324CB5DBA005A391E /* UserSample.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA7224CB5DBA005A391E /* UserSample.xcdatamodeld */; };
+		EE65EA8424CB5DBA005A391E /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA7524CB5DBA005A391E /* User+CoreDataProperties.swift */; };
+		EE65EA8524CB5DBA005A391E /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA7624CB5DBA005A391E /* User+CoreDataClass.swift */; };
+		EE65EA8624CB5DBA005A391E /* APIServices.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA7824CB5DBA005A391E /* APIServices.swift */; };
+		EE65EA8724CB5DBA005A391E /* APIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA7924CB5DBA005A391E /* APIManager.swift */; };
+		EE65EA8824CB5DBA005A391E /* Reachibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA7A24CB5DBA005A391E /* Reachibility.swift */; };
+		EE65EA8924CB5DBA005A391E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA7C24CB5DBA005A391E /* Constants.swift */; };
+		EE65EA8A24CB5DBA005A391E /* CustomAlertAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA7D24CB5DBA005A391E /* CustomAlertAction.swift */; };
+		EE65EA8B24CB5DBA005A391E /* UserProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA7F24CB5DBA005A391E /* UserProtocol.swift */; };
+		EE65EA8C24CB5DBA005A391E /* ViewControllerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA8024CB5DBA005A391E /* ViewControllerProtocol.swift */; };
+		EE65EA8D24CB5DBA005A391E /* ClassProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA8124CB5DBA005A391E /* ClassProtocol.swift */; };
+		EE65EA8F24CB6045005A391E /* PersonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE65EA8E24CB6045005A391E /* PersonModel.swift */; };
+		EE9B1E1A24CCB4930059C946 /* localData.json in Resources */ = {isa = PBXBuildFile; fileRef = EE9B1E1924CCB4930059C946 /* localData.json */; };
+		EE9BB2CE25FBDB3C00A503BC /* HomeWireFrame.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BB2CD25FBDB3C00A503BC /* HomeWireFrame.swift */; };
+		EE9BB2D225FBDFBB00A503BC /* HomeProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE9BB2D125FBDFBB00A503BC /* HomeProtocol.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		EE65EA5B24CB5AB9005A391E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE65EA3C24CB5AB2005A391E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = EE65EA4324CB5AB2005A391E;
+			remoteInfo = TinderUser;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		01E12077FD0047506995E5B1 /* Pods-TinderUserTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderUserTests.debug.xcconfig"; path = "Target Support Files/Pods-TinderUserTests/Pods-TinderUserTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1226429987139C3FADDFA363 /* Pods-TinderUser.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderUser.release.xcconfig"; path = "Target Support Files/Pods-TinderUser/Pods-TinderUser.release.xcconfig"; sourceTree = "<group>"; };
+		1ECF6978B3C49E3A39955B2D /* Pods_TinderUserTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderUserTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84BF92BB789C138E11247564 /* Pods_TinderUser.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderUser.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		AE464B7719AF25589F6C6281 /* Pods-TinderUser.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderUser.debug.xcconfig"; path = "Target Support Files/Pods-TinderUser/Pods-TinderUser.debug.xcconfig"; sourceTree = "<group>"; };
+		EE5D2EA824CB705D00239854 /* FavListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavListViewController.swift; sourceTree = "<group>"; };
+		EE5D2EAC24CB741C00239854 /* PersonCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonCardView.swift; sourceTree = "<group>"; };
+		EE5D2EAE24CB742F00239854 /* PersonCardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PersonCardView.xib; sourceTree = "<group>"; };
+		EE5D2EB024CC0AF800239854 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
+		EE5D2EB224CC0BC100239854 /* StoryBorad+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "StoryBorad+Extension.swift"; sourceTree = "<group>"; };
+		EE5D2EB424CC0DD400239854 /* TabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabView.swift; sourceTree = "<group>"; };
+		EE5D2EB624CC0DE200239854 /* TabView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TabView.xib; sourceTree = "<group>"; };
+		EE5D2EB824CC146000239854 /* XIBHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XIBHelper.swift; sourceTree = "<group>"; };
+		EE5D2EBA24CC9AC900239854 /* PanGestureInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PanGestureInteractor.swift; sourceTree = "<group>"; };
+		EE5D2EBC24CCA9B400239854 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EE62060124CD783100DA79D7 /* HomeViewInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewInteractor.swift; sourceTree = "<group>"; };
+		EE62060324CD809900DA79D7 /* FavouriteDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavouriteDataSource.swift; sourceTree = "<group>"; };
+		EE62060524CD81BF00DA79D7 /* FavTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavTableCell.swift; sourceTree = "<group>"; };
+		EE62060724CD8D8500DA79D7 /* HomeViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModelTests.swift; sourceTree = "<group>"; };
+		EE62060924CD8D9800DA79D7 /* FavDataSourceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavDataSourceTest.swift; sourceTree = "<group>"; };
+		EE65EA4424CB5AB2005A391E /* TinderUser.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderUser.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE65EA4724CB5AB2005A391E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		EE65EA4924CB5AB2005A391E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		EE65EA4B24CB5AB2005A391E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		EE65EA4E24CB5AB2005A391E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EE65EA5024CB5AB9005A391E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EE65EA5324CB5AB9005A391E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EE65EA5524CB5AB9005A391E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE65EA5A24CB5AB9005A391E /* TinderUserTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TinderUserTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		EE65EA5E24CB5AB9005A391E /* TinderUserTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TinderUserTests.swift; sourceTree = "<group>"; };
+		EE65EA6024CB5AB9005A391E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EE65EA7124CB5DBA005A391E /* DataManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataManager.swift; sourceTree = "<group>"; };
+		EE65EA7324CB5DBA005A391E /* UserSample.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserSample.xcdatamodel; sourceTree = "<group>"; };
+		EE65EA7524CB5DBA005A391E /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		EE65EA7624CB5DBA005A391E /* User+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		EE65EA7824CB5DBA005A391E /* APIServices.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIServices.swift; sourceTree = "<group>"; };
+		EE65EA7924CB5DBA005A391E /* APIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIManager.swift; sourceTree = "<group>"; };
+		EE65EA7A24CB5DBA005A391E /* Reachibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Reachibility.swift; sourceTree = "<group>"; };
+		EE65EA7C24CB5DBA005A391E /* Constants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EE65EA7D24CB5DBA005A391E /* CustomAlertAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomAlertAction.swift; sourceTree = "<group>"; };
+		EE65EA7F24CB5DBA005A391E /* UserProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserProtocol.swift; sourceTree = "<group>"; };
+		EE65EA8024CB5DBA005A391E /* ViewControllerProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewControllerProtocol.swift; sourceTree = "<group>"; };
+		EE65EA8124CB5DBA005A391E /* ClassProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClassProtocol.swift; sourceTree = "<group>"; };
+		EE65EA8E24CB6045005A391E /* PersonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonModel.swift; sourceTree = "<group>"; };
+		EE9B1E1924CCB4930059C946 /* localData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = localData.json; sourceTree = "<group>"; };
+		EE9BB2CD25FBDB3C00A503BC /* HomeWireFrame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeWireFrame.swift; sourceTree = "<group>"; };
+		EE9BB2D125FBDFBB00A503BC /* HomeProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeProtocol.swift; sourceTree = "<group>"; };
+		FD99FE6B2289FCD0822C6B90 /* Pods-TinderUserTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderUserTests.release.xcconfig"; path = "Target Support Files/Pods-TinderUserTests/Pods-TinderUserTests.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EE65EA4124CB5AB2005A391E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				23A2A3784F1E48A5AF910AB4 /* Pods_TinderUser.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE65EA5724CB5AB9005A391E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1EDD85B088982C0CE957ABEC /* Pods_TinderUserTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		16A662B7D37F1DC944E12485 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84BF92BB789C138E11247564 /* Pods_TinderUser.framework */,
+				1ECF6978B3C49E3A39955B2D /* Pods_TinderUserTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9EB13E94F0311E4DA3B00D64 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AE464B7719AF25589F6C6281 /* Pods-TinderUser.debug.xcconfig */,
+				1226429987139C3FADDFA363 /* Pods-TinderUser.release.xcconfig */,
+				01E12077FD0047506995E5B1 /* Pods-TinderUserTests.debug.xcconfig */,
+				FD99FE6B2289FCD0822C6B90 /* Pods-TinderUserTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EE5D2EAA24CB73F600239854 /* Subviews */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D2EAB24CB740200239854 /* CardView */,
+				EE5D2EB424CC0DD400239854 /* TabView.swift */,
+				EE5D2EB624CC0DE200239854 /* TabView.xib */,
+			);
+			path = Subviews;
+			sourceTree = "<group>";
+		};
+		EE5D2EAB24CB740200239854 /* CardView */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D2EAC24CB741C00239854 /* PersonCardView.swift */,
+				EE5D2EAE24CB742F00239854 /* PersonCardView.xib */,
+			);
+			path = CardView;
+			sourceTree = "<group>";
+		};
+		EE5D2EBE24CCA9BF00239854 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				EE65EA4B24CB5AB2005A391E /* ViewController.swift */,
+				EE5D2EBC24CCA9B400239854 /* HomeViewModel.swift */,
+				EE62060124CD783100DA79D7 /* HomeViewInteractor.swift */,
+				EE9BB2CD25FBDB3C00A503BC /* HomeWireFrame.swift */,
+				EE9BB2D125FBDFBB00A503BC /* HomeProtocol.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		EE62060024CD77B800DA79D7 /* Favorite */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D2EA824CB705D00239854 /* FavListViewController.swift */,
+				EE62060324CD809900DA79D7 /* FavouriteDataSource.swift */,
+				EE62060524CD81BF00DA79D7 /* FavTableCell.swift */,
+			);
+			path = Favorite;
+			sourceTree = "<group>";
+		};
+		EE65EA3B24CB5AB2005A391E = {
+			isa = PBXGroup;
+			children = (
+				EE65EA4624CB5AB2005A391E /* TinderUser */,
+				EE65EA5D24CB5AB9005A391E /* TinderUserTests */,
+				EE65EA4524CB5AB2005A391E /* Products */,
+				9EB13E94F0311E4DA3B00D64 /* Pods */,
+				16A662B7D37F1DC944E12485 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EE65EA4524CB5AB2005A391E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE65EA4424CB5AB2005A391E /* TinderUser.app */,
+				EE65EA5A24CB5AB9005A391E /* TinderUserTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE65EA4624CB5AB2005A391E /* TinderUser */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D2EAA24CB73F600239854 /* Subviews */,
+				EE65EA7024CB5DBA005A391E /* Database */,
+				EE65EA7724CB5DBA005A391E /* NetworkService */,
+				EE65EA7B24CB5DBA005A391E /* Utility */,
+				EE65EA6924CB5AEE005A391E /* Delegates */,
+				EE65EA6C24CB5D0A005A391E /* Views */,
+				EE65EA6A24CB5AFC005A391E /* Storyboards */,
+				EE65EA6B24CB5B0A005A391E /* Resource */,
+			);
+			path = TinderUser;
+			sourceTree = "<group>";
+		};
+		EE65EA5D24CB5AB9005A391E /* TinderUserTests */ = {
+			isa = PBXGroup;
+			children = (
+				EE65EA5E24CB5AB9005A391E /* TinderUserTests.swift */,
+				EE62060724CD8D8500DA79D7 /* HomeViewModelTests.swift */,
+				EE62060924CD8D9800DA79D7 /* FavDataSourceTest.swift */,
+				EE65EA6024CB5AB9005A391E /* Info.plist */,
+			);
+			path = TinderUserTests;
+			sourceTree = "<group>";
+		};
+		EE65EA6924CB5AEE005A391E /* Delegates */ = {
+			isa = PBXGroup;
+			children = (
+				EE65EA4724CB5AB2005A391E /* AppDelegate.swift */,
+				EE65EA4924CB5AB2005A391E /* SceneDelegate.swift */,
+			);
+			path = Delegates;
+			sourceTree = "<group>";
+		};
+		EE65EA6A24CB5AFC005A391E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EE65EA4D24CB5AB2005A391E /* Main.storyboard */,
+				EE65EA5224CB5AB9005A391E /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		EE65EA6B24CB5B0A005A391E /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				EE65EA5024CB5AB9005A391E /* Assets.xcassets */,
+				EE65EA5524CB5AB9005A391E /* Info.plist */,
+				EE9B1E1924CCB4930059C946 /* localData.json */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		EE65EA6C24CB5D0A005A391E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				EE5D2EBE24CCA9BF00239854 /* Home */,
+				EE62060024CD77B800DA79D7 /* Favorite */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		EE65EA7024CB5DBA005A391E /* Database */ = {
+			isa = PBXGroup;
+			children = (
+				EE65EA7124CB5DBA005A391E /* DataManager.swift */,
+				EE65EA7224CB5DBA005A391E /* UserSample.xcdatamodeld */,
+				EE65EA7424CB5DBA005A391E /* Models */,
+				EE65EA8E24CB6045005A391E /* PersonModel.swift */,
+			);
+			path = Database;
+			sourceTree = "<group>";
+		};
+		EE65EA7424CB5DBA005A391E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				EE65EA7524CB5DBA005A391E /* User+CoreDataProperties.swift */,
+				EE65EA7624CB5DBA005A391E /* User+CoreDataClass.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		EE65EA7724CB5DBA005A391E /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				EE65EA7824CB5DBA005A391E /* APIServices.swift */,
+				EE65EA7924CB5DBA005A391E /* APIManager.swift */,
+				EE65EA7A24CB5DBA005A391E /* Reachibility.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		EE65EA7B24CB5DBA005A391E /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				EE65EA7C24CB5DBA005A391E /* Constants.swift */,
+				EE65EA7D24CB5DBA005A391E /* CustomAlertAction.swift */,
+				EE65EA7E24CB5DBA005A391E /* Protocols */,
+				EE5D2EB024CC0AF800239854 /* UIView+Extension.swift */,
+				EE5D2EB224CC0BC100239854 /* StoryBorad+Extension.swift */,
+				EE5D2EBA24CC9AC900239854 /* PanGestureInteractor.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		EE65EA7E24CB5DBA005A391E /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				EE65EA7F24CB5DBA005A391E /* UserProtocol.swift */,
+				EE65EA8024CB5DBA005A391E /* ViewControllerProtocol.swift */,
+				EE65EA8124CB5DBA005A391E /* ClassProtocol.swift */,
+				EE5D2EB824CC146000239854 /* XIBHelper.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EE65EA4324CB5AB2005A391E /* TinderUser */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE65EA6324CB5AB9005A391E /* Build configuration list for PBXNativeTarget "TinderUser" */;
+			buildPhases = (
+				B9F299BD19D8FDC5AC72BC5E /* [CP] Check Pods Manifest.lock */,
+				EE65EA4024CB5AB2005A391E /* Sources */,
+				EE65EA4124CB5AB2005A391E /* Frameworks */,
+				EE65EA4224CB5AB2005A391E /* Resources */,
+				10F5DB63225E21B0D2683530 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TinderUser;
+			productName = TinderUser;
+			productReference = EE65EA4424CB5AB2005A391E /* TinderUser.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EE65EA5924CB5AB9005A391E /* TinderUserTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EE65EA6624CB5AB9005A391E /* Build configuration list for PBXNativeTarget "TinderUserTests" */;
+			buildPhases = (
+				71FF4DD292C8D35E76CBA189 /* [CP] Check Pods Manifest.lock */,
+				EE65EA5624CB5AB9005A391E /* Sources */,
+				EE65EA5724CB5AB9005A391E /* Frameworks */,
+				EE65EA5824CB5AB9005A391E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EE65EA5C24CB5AB9005A391E /* PBXTargetDependency */,
+			);
+			name = TinderUserTests;
+			productName = TinderUserTests;
+			productReference = EE65EA5A24CB5AB9005A391E /* TinderUserTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EE65EA3C24CB5AB2005A391E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1150;
+				LastUpgradeCheck = 1150;
+				ORGANIZATIONNAME = "Rajneesh Kumar";
+				TargetAttributes = {
+					EE65EA4324CB5AB2005A391E = {
+						CreatedOnToolsVersion = 11.5;
+					};
+					EE65EA5924CB5AB9005A391E = {
+						CreatedOnToolsVersion = 11.5;
+						TestTargetID = EE65EA4324CB5AB2005A391E;
+					};
+				};
+			};
+			buildConfigurationList = EE65EA3F24CB5AB2005A391E /* Build configuration list for PBXProject "TinderUser" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EE65EA3B24CB5AB2005A391E;
+			productRefGroup = EE65EA4524CB5AB2005A391E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EE65EA4324CB5AB2005A391E /* TinderUser */,
+				EE65EA5924CB5AB9005A391E /* TinderUserTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EE65EA4224CB5AB2005A391E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE65EA5424CB5AB9005A391E /* LaunchScreen.storyboard in Resources */,
+				EE65EA5124CB5AB9005A391E /* Assets.xcassets in Resources */,
+				EE65EA4F24CB5AB2005A391E /* Main.storyboard in Resources */,
+				EE5D2EAF24CB742F00239854 /* PersonCardView.xib in Resources */,
+				EE5D2EB724CC0DE200239854 /* TabView.xib in Resources */,
+				EE9B1E1A24CCB4930059C946 /* localData.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE65EA5824CB5AB9005A391E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		10F5DB63225E21B0D2683530 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinderUser/Pods-TinderUser-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TinderUser/Pods-TinderUser-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinderUser/Pods-TinderUser-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		71FF4DD292C8D35E76CBA189 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinderUserTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B9F299BD19D8FDC5AC72BC5E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinderUser-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EE65EA4024CB5AB2005A391E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE65EA4C24CB5AB2005A391E /* ViewController.swift in Sources */,
+				EE5D2EAD24CB741C00239854 /* PersonCardView.swift in Sources */,
+				EE65EA8924CB5DBA005A391E /* Constants.swift in Sources */,
+				EE65EA8224CB5DBA005A391E /* DataManager.swift in Sources */,
+				EE5D2EB524CC0DD400239854 /* TabView.swift in Sources */,
+				EE65EA8624CB5DBA005A391E /* APIServices.swift in Sources */,
+				EE62060224CD783100DA79D7 /* HomeViewInteractor.swift in Sources */,
+				EE65EA8C24CB5DBA005A391E /* ViewControllerProtocol.swift in Sources */,
+				EE65EA8724CB5DBA005A391E /* APIManager.swift in Sources */,
+				EE65EA8D24CB5DBA005A391E /* ClassProtocol.swift in Sources */,
+				EE65EA8424CB5DBA005A391E /* User+CoreDataProperties.swift in Sources */,
+				EE65EA4824CB5AB2005A391E /* AppDelegate.swift in Sources */,
+				EE5D2EBB24CC9AC900239854 /* PanGestureInteractor.swift in Sources */,
+				EE65EA8324CB5DBA005A391E /* UserSample.xcdatamodeld in Sources */,
+				EE65EA8F24CB6045005A391E /* PersonModel.swift in Sources */,
+				EE5D2EB124CC0AF800239854 /* UIView+Extension.swift in Sources */,
+				EE65EA8B24CB5DBA005A391E /* UserProtocol.swift in Sources */,
+				EE5D2EB324CC0BC100239854 /* StoryBorad+Extension.swift in Sources */,
+				EE62060424CD809900DA79D7 /* FavouriteDataSource.swift in Sources */,
+				EE65EA4A24CB5AB2005A391E /* SceneDelegate.swift in Sources */,
+				EE5D2EA924CB705D00239854 /* FavListViewController.swift in Sources */,
+				EE5D2EBD24CCA9B400239854 /* HomeViewModel.swift in Sources */,
+				EE65EA8824CB5DBA005A391E /* Reachibility.swift in Sources */,
+				EE5D2EB924CC146000239854 /* XIBHelper.swift in Sources */,
+				EE62060624CD81BF00DA79D7 /* FavTableCell.swift in Sources */,
+				EE9BB2CE25FBDB3C00A503BC /* HomeWireFrame.swift in Sources */,
+				EE65EA8524CB5DBA005A391E /* User+CoreDataClass.swift in Sources */,
+				EE65EA8A24CB5DBA005A391E /* CustomAlertAction.swift in Sources */,
+				EE9BB2D225FBDFBB00A503BC /* HomeProtocol.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		EE65EA5624CB5AB9005A391E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EE62060A24CD8D9800DA79D7 /* FavDataSourceTest.swift in Sources */,
+				EE65EA5F24CB5AB9005A391E /* TinderUserTests.swift in Sources */,
+				EE62060824CD8D8500DA79D7 /* HomeViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EE65EA5C24CB5AB9005A391E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = EE65EA4324CB5AB2005A391E /* TinderUser */;
+			targetProxy = EE65EA5B24CB5AB9005A391E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		EE65EA4D24CB5AB2005A391E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE65EA4E24CB5AB2005A391E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EE65EA5224CB5AB9005A391E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EE65EA5324CB5AB9005A391E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EE65EA6124CB5AB9005A391E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EE65EA6224CB5AB9005A391E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EE65EA6424CB5AB9005A391E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AE464B7719AF25589F6C6281 /* Pods-TinderUser.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TinderUser/Resource/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dkatalis.TinderUser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EE65EA6524CB5AB9005A391E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1226429987139C3FADDFA363 /* Pods-TinderUser.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TinderUser/Resource/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dkatalis.TinderUser;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		EE65EA6724CB5AB9005A391E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 01E12077FD0047506995E5B1 /* Pods-TinderUserTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TinderUserTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dkatalis.TinderUserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TinderUser.app/TinderUser";
+			};
+			name = Debug;
+		};
+		EE65EA6824CB5AB9005A391E /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FD99FE6B2289FCD0822C6B90 /* Pods-TinderUserTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = TinderUserTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = dkatalis.TinderUserTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/TinderUser.app/TinderUser";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EE65EA3F24CB5AB2005A391E /* Build configuration list for PBXProject "TinderUser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE65EA6124CB5AB9005A391E /* Debug */,
+				EE65EA6224CB5AB9005A391E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE65EA6324CB5AB9005A391E /* Build configuration list for PBXNativeTarget "TinderUser" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE65EA6424CB5AB9005A391E /* Debug */,
+				EE65EA6524CB5AB9005A391E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EE65EA6624CB5AB9005A391E /* Build configuration list for PBXNativeTarget "TinderUserTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EE65EA6724CB5AB9005A391E /* Debug */,
+				EE65EA6824CB5AB9005A391E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EE65EA7224CB5DBA005A391E /* UserSample.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EE65EA7324CB5DBA005A391E /* UserSample.xcdatamodel */,
+			);
+			currentVersion = EE65EA7324CB5DBA005A391E /* UserSample.xcdatamodel */;
+			path = UserSample.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EE65EA3C24CB5AB2005A391E /* Project object */;
+}
